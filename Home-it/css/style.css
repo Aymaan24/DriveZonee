@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins";
+    margin: 0;
+  }
+  
+  .first{
+      
+      width: 100%;
+      color: white;
+      background-color: #1B1D1F;
+      opacity: 0.9;
+      font-size: large;
+      padding: 10px 60px;
+    
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      position: fixed; 
+  }
+  
+  span{
+      font-size: larger;
+      font-weight: 700;
+  }
+  
+  .div1{
+     color: white;
+     
+      border-radius: 2px;
+      height: 620px; 
+      background-size: cover;
+      height: 100vh;
+      width:100vw;
+      background-image: url(../images/back-ground.jpg)
+     
+  }
+  /* .head{
+    
+    text-decoration-line: underline;
+     padding-top: 10px ;
+     padding-left: 30px;
+     
+     font-size: 2em;
+     font-weight: 600;
+  } */
+  .intro{
+      padding-top: 85px ;
+      padding-left: 35px;
+      font-size: 1.5em;
+      font-weight: 300;
+     
+   }
+  .brands{
+      display: flex;
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 600px;
+   justify-content: space-between;
+   gap: 10px;
+   
+  
+  }
+  .car1{
+    padding: 3px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  background: linear-gradient(13deg,rgba(255,255,255,.1),rgba(255,255,255,0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:0 8px 32px 0 rgba(0,0,0,37) ;
+    height: 110px;
+    width:130px;
+ 
+
+}
+  .car1:hover{
+    transition: .5s ease;
+
+    height: 120px;
+    width:137px;
+    color: #000000;
+    
+}
+.bmwimage{
+    width: 40px;
+   padding-bottom: 20px;
+}
+.name-brand{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+
+}
+.name-brand:hover{
+color: black;
+}
+
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    
+   
+}
+li{
+    color: rgb(255, 255, 255);
+    list-style: none;
+    font-weight: 600;
+}
+li:hover{
+    color: rgb(255, 188, 106);
+}
+
+.right{
+    font-size: 2em;
+    margin-left: 10px;
+}
+
