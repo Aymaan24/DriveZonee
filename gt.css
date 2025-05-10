@@ -1,0 +1,110 @@
+body{
+
+    margin: 0;
+        padding: 0;
+                background:
+                    linear-gradient(
+                        to top ,
+                    #000000,
+                #424242,
+            #000000);
+        min-height: 100vh;
+    padding-bottom: 320px;
+}
+header nav{
+    margin: auto;
+        display: flex;
+            justify-content: space-between;
+                align-items: center;
+}
+header nav .menu{
+    display: flex;
+        align-items: center;
+
+}
+nav .menu a{
+    color: white;
+            margin-left: 20px;
+            position: relative;
+    text-decoration: none;
+    bottom: -5px;
+}
+header nav .menu a::after{
+    content: '';
+        position: absolute;
+            bottom: -5px;
+                left: 0;
+                width: 0%;
+            height: 2px;
+        background-color: #aaaaaa;
+    transition: 0.4s;
+
+}
+nav .menu a:hover::after{
+        width: 100%;
+}
+h1  {
+    color: white;
+        font-family: Arial, sans-serif;
+            margin: 80px auto 0;
+        text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: fit-content;
+
+}
+h2 {
+    color: white;
+    font-size: 25px;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+p {
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    display: block;
+    margin-left: 40px;
+    margin-right: 800px;
+    min-width: 600px;
+    line-height: 24px;
+}
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 70px;
+    margin-left: 40px;
+}
+.GT-BLACK{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    flex-wrap: nowrap;
+    margin-top: 150px;
+}
+.GT-BLACK img{
+    width: 370px;
+    height: auto;
+    border-radius: 10px;
+    transition: 0.4s ease;
+    filter: grayscale(100%);
+}
+.GT-BLACK img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.514);
+    position: absolute;
+    bottom: -600px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NISSAN GTR 2025</title>
+    <style>
+        body {
+            background-color: rgb(36, 34, 34);
+            padding: 15px;
+        }
+
+        .h1 {
+            color: aliceblue;
+        }
+
+        .image {
+            width: 450px;
+            border-radius: 50px;
+        }
+
+        #im {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #ve {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div>ul>li {
+            color: aliceblue;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+
+        div>h2 {
+            color: aliceblue;
+            font-style: oblique;
+        }
+
+        #back {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: aliceblue;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        div>a {
+            color: aliceblue;
+            font-size: xx-large;
+        }
+
+        div>h1 {
+            color: rgb(206, 14, 14);
+        }
+
+
+
+
+        .calc{
+  background: -webkit-linear-gradient(top , #060e15 ,#131c25 , #091031 , #132c3f ,#9d9a9a  ) ;
+  padding: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color: rgb(23, 30, 30);
+  gap: 30px;
+  color: aliceblue;
+}
+.inputes{
+  display: flex;
+ gap: 30px;
+}
+
+.wordf{
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.calcf{
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.calcf:hover{
+  color: aliceblue;
+  transition: .5s;
+  background-color:  #092031;
+  width: 73px;
+  height: 43px;
+}
+.vfuel{
+  background-color: rgb(243, 243, 243);
+  width: 160px;
+  color: black;
+}
+
+.divcalc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="im">
+        <h1 class="h1">NISSAN GTR 2025</h1>
+    </div>
+    <div id="ve">
+        <iframe width="700" height="350" src="https://www.youtube.com/embed/1ex7F6xTVg0"></iframe>
+    </div>
+
+    <div id="p">
+        <h1>About Car:</h1>
+        <h2>
+            The 2025 Nissan GT-R is one of the most iconic sports cars offered by Nissan,
+and belongs to the high-performance coupe category. Here are the latest specifications and highlights for the 2025 model.
+The 2025 Nissan GT-R is available in multiple trims including Premium, T-Spec, and NISMO,
+each offering unique features to suit different driving preferences and performance need
+
+
+        </h2>
+        <div id="fo">
+            <ul>
+                <li>The car is equipped with a 3.8-liter twin-turbocharged V6 engine that delivers up to 600 horsepower.</li>
+                <li>It has a torque of 156 Newton metres, and is linked to a 4-speed automatic transmission.</li>
+                <li> Operates with an all-wheel-drive (AWD) system for maximum grip and stability</li>
+                <li>The GT-R reaches a top speed of around 315 km/h</li>
+                <li>The car accelerates from zero to 100 km/h in approximately 2.9 seconds</li>
+                <li>Fuel consumption is estimated at around 11.8 liters per 100 km in combined driving conditions.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="divcalc">
+
+    <form class="calc">
+
+        <div class="wordf">
+      calculate fuel consumption 
+        </div>
+      
+      <div class="inputes">
+      
+        <div >
+          <div class="word1">
+                distance in kilo metres (K )
+              </div>
+          <input  class="kilo" type="number">
+        </div>
+      
+        <div>
+          <div class="word1">
+            fuel consumption (L/K)
+              </div>
+            
+              <input  class="fuel" type="number">
+             
+            </div>
+      
+        </div>
+      
+        <input type="submit"  value="calc" class="calcf" >
+      
+      </form>
+    </div>
+
+
+    <div id="back">
+
+        <a href="index-nissan.html" target="_blank"> Go back</a>
+
+    </div>
+<script  >
+
+let kilo=document.querySelector(".kilo");
+let fuel=document.querySelector(".fuel");
+let calc=document.querySelector(".calcf");
+
+calc.onclick=function(){
+    fuel.value=kilo.value*(.0713);
+}
+
+</script>
+</body>
+
+</html>

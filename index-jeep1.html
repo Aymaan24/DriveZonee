@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeep</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css-jeep/style.css" />
+</head>
+<body>
+  <section class="jeep-container" id="car3">
+    <div class="jeep-content">
+      <div class="jeep-header">
+        <div class="jeep-logo">
+          <img class="logoo" src="images-jeep/jeep-3-logo-black-and-white.png" alt="this is jeep logo">
+        </div>
+        <div class="jeep-title">
+          <p>Jeep is Quality & Durability Backed By Our 10-Year/100,000 Miles Limited</p>
+        </div>
+      </div>
+
+      <div class="jeep-cars">
+        <div class="jeep-car">
+          <img src="images-jeep/B272232-2017-Cherokee-Overland--1-.jpg" alt="this is jeep car">
+          <div class="jeep-car-info">
+            <span>FUEL YOUR AMBITION</span>
+            <h4>Jeep cherokee</h4>
+            <a href="index-jeep2.html" target="_blank"><button class="jeep-car-btn">Meet JeepCherokee</button></a>
+          </div>
+        </div>
+
+        <div class="jeep-car">
+          <img src="images-jeep/jeep_compass__582369297fx.jpg" alt="this is jeep car">
+          <div class="jeep-car-info">
+            <span>SUV CAPABILITY EV POWER</span>
+            <h4>Jeep compass</h4>
+            <a href="index-jeep3.html" target="_blank"><button class="jeep-car-btn">Meet JeepCompass</button></a>
+          </div>
+        </div>
+
+        <div class="jeep-car">
+          <img src="images-jeep/renegade.jpeg" alt="this is jeep car">
+          <div class="jeep-car-info">
+            <span>RUGGED & REFINED</span>
+            <h4>2017 Renegade</h4>
+            <a href="index-jeep4.html" target="_blank"><button class="jeep-car-btn">Meet Renegade</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="jeep-background-img"></div>
+
+    <div class="jeep-sec-footer">
+      <div class="jeep-footer-item">
+        <img src="images-jeep/2026-jjeep-grand-cherokee-2026jpg.jpg">
+        <div class="jeep-footer-it-info">
+          <span>Upcoming</span>
+          <h2>2026 Grand cherokee</h2>
+          <p>Arrives with an available new turbocharged hybrid engine.</p>
+        </div>
+        <div class="jeep-footer-it-btn">
+          <a href="https://www.jeep.com/" target="_blank"><button class="jeep-car-btn">Learn More</button></a>
+        </div>
+      </div>
+
+      <div class="jeep-footer-item jeep-footer-item-center">
+        <img src="images-jeep/jeep-compass-2026.jpg">
+        <div class="jeep-footer-it-info">
+          <span>Upcoming</span>
+          <h2>2026 JeepCompass</h2>
+          <p>The pinnacle of performance, built to thrill.</p>
+        </div>
+        <div class="jeep-footer-it-btn">
+          <a href="https://www.jeep.com/" target="_blank"><button class="jeep-car-btn">Learn More</button></a>
+        </div>
+      </div>
+
+      <div class="jeep-footer-item">
+        <img src="images-jeep/jeep-wagoneer-s-exterior.jpg">
+        <div class="jeep-footer-it-info">
+          <span>Upcoming</span>
+          <h2>2026 Jeep Recon</h2>
+          <p>The refreshed and adventure-ready Sorento Hybrid joins the Sorento family.</p>
+        </div>
+        <div class="jeep-footer-it-btn">
+          <a href="https://www.jeep.com/" target="_blank"><button class="jeep-car-btn">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrapper-parent">
+    <div class="wrapper">
+      <i class="fa-solid fa-arrow-left button" id="prev"></i>
+      <div class="image-container">
+        <div class="carousel">
+            <img src="images-jeep/white-jeep.jpg"/>
+            <img src="images-jeep/black-jeep.jpg"/>
+            <img src="images-jeep/gray-jeep.jpg"/>
+            <img src="images-jeep/inside-jeep.jpg"/>
+            <img src="Images/yellow-jeepjpg.jpg">
+            <img src="images-jeep/shine-jeep.jpg">
+            <img src="images-jeep/red-jeep.jpg">     
+            <img src="images-jeep/sunny-jeep.jpeg">     
+            <img src="images-jeep/cherokee.jpg">     
+            <img src="images-jeep/B272232-2017-Cherokee-Overland--1-.jpg">     
+            <img src="images-jeep/car 7.jpg">     
+            <img src="images-jeep/orignal-1744934497-997_cut.webp">
+        </div>
+      </div>
+      <i class="fa-solid fa-arrow-right button" id="next"></i>
+    </div>
+  </section>
+
+  <script>
+    const wrapper = document.querySelector(".wrapper"),
+      carousel = document.querySelector(".carousel"),
+      images = document.querySelectorAll(".carousel img"),
+      buttons = document.querySelectorAll(".button");
+
+    let imageIndex = 0;
+
+    const slideImage = () => {
+      imageIndex = imageIndex === images.length ? 0 : imageIndex < 0 ? images.length - 1 : imageIndex;
+      carousel.style.transform = `translateX(-${imageIndex * 100}%)`;
+    };
+
+    const updateClick = (e) => {
+      imageIndex += e.target.id === "next" ? 1 : -1;
+      slideImage();
+    };
+
+    buttons.forEach((button) => button.addEventListener("click", updateClick));
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css-login1/style.css">
+</head>
+<body>
+    <img class="backimg" src="images-login1/back6.jpg">
+    <form id="form">
+        <div class="signin">
+            <h3 class="str1">Sign in</h3>
+            <div class="icon">
+                <a href="https://github.com/">
+                    <img src="images-login1/github.png" alt="GitHub">
+                </a>
+                <a href="https://google.com">
+                    <img src="images-login1/google.png" alt="Google">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images-login1/face.png" alt="Facebook">
+                </a>
+            </div>
+
+            <input type="text" id="email" placeholder="Email">
+            <div id="error"></div>
+            <input type="password" id="password" placeholder="Password">
+            <div id="errorp"></div>
+            <input type="submit" value="SIGN IN" id="submit" class="submit">
+        </div>
+
+        <div class="signup">
+            <h2>Create an Account</h2>
+            <p>Sign up if you don't have an account</p>
+            <a href="index-loginpage2.html">SIGN UP</a>
+        </div>
+    </form>
+
+    <script>
+        var error = document.getElementById("error");
+        var errorp = document.getElementById("errorp");
+        var form = document.getElementById("form");
+        var email = document.getElementById("email");
+        var password = document.getElementById("password");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let Error = [];
+            let Errpass = [];
+
+            if (email.value === "" || email.value == null)
+                Error.push("Email is required");
+            else {
+                var x = false;
+                for (let i = 0; i < email.value.length; i++) {
+                    if (email.value[i] === "@") {
+                        x = true;
+                        break;
+                    }
+                }
+                if (!x) Error.push("Please include an '@' in the email address");
+            }
+
+            if (Error.length > 0) {
+                error.innerHTML = Error.join("<br>");
+                return;
+            }
+
+            if (password.value === "" || password.value == null)
+                Errpass.push("Password is required");
+
+            if (Errpass.length > 0) {
+                errorp.innerHTML = Errpass.join("<br>");
+                return;
+            }
+
+            
+            const formData = JSON.parse(localStorage.getItem("formData"));
+            if (formData && formData.email === email.value && formData.password === password.value) {
+                
+                window.location.href = "home.html";
+                
+            } else {
+                error.innerHTML = "User not found or incorrect password";
+            }
+        });
+    </script>
+</body>
+</html>

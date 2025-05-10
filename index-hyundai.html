@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hyundai Cars</title>
+  <link rel="stylesheet" href="css-hyundai/style.css" />
+</head>
+<body>
+
+  <header class="hyundai-header">
+    <div class="container">
+      <a href="https://www.hyundai.com/worldwide/en">
+        <img src="media2/logo.png" alt="Hyundai logo" class="logo" />
+      </a>
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Models">Models</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="About" class="reveal">
+      <h2>About Hyundai</h2>
+      <p>Hyundai Motors has served as a pioneer in the automobile industry in Korea since its inception, 
+        achieving this level of development through its exclusive technologies. 
+        Hyundai Motors then gained fame as a global leader in the automotive industry,
+         exporting cars bearing its brand to more than 200 countries. 
+         It also has production bases all over the world. The company is working to expand the automotive market through the large-scale production of hydrogen-powered cars
+          for the first time in the world and the launch of GENESIS,
+           a luxury brand, in addition to working to advance the future of the mobility industry towards a better future based on its leadership 
+           in innovation in connectivity and autonomous driving technologies. 
+          It also seeks to find better solutions to serve humanity by providing technical innovations aimed at “developing humanity.”.</p>
+    </section>
+
+    <section id="Models" class="reveal">
+      <div class="container">
+        <h2>Our Top Models</h2>
+        <div class="models-grid">
+          <div class="model">
+            <a href="Loniq 5n.html">
+              <img src="media2/2025-hyundai-ioniq-5-n.jpg" alt="Hyundai Ioniq 5 N">
+            </a>
+            <h3>Hyundai Ioniq 5 N</h3>
+            <p>A compact sedan that combines elegance, efficiency, and technology in a stylish design.</p>
+          </div>
+    
+          <div class="model">
+            <a href="Tusco.html">
+              <img src="media2/cfbd002d-hyundai-tucson-.jpg" alt="Hyundai Tucson">
+            </a>
+            <h3>Hyundai Tucson</h3>
+            <p>A modern SUV with bold design, advanced safety features, and a spacious interior.</p>
+          </div>
+    
+          <div class="model">
+            <a href="Elantra.html">
+              <img src="media2/2024-elantra-front-right.avif" alt="Hyundai Elantra">
+            </a>
+            <h3>Hyundai Elantra</h3>
+            <p>A smart and sporty sedan know for its sleek design and feul efficiency .</p>
+          </div>
+    
+          <div class="model">
+          <a href="santa fe.html">
+            <img src="media2/Hyundai-Santa-Fe-Hybrid-in-white.jpg" alt="Hyundai Santa Fe">
+          </a>
+          <h3>Hyundai Santa Fe</h3>
+          <p>A family-friendly SUV with powerful performance and top-notch comfort features .</p>
+        </div>
+        <div class="model">
+          <a href="loniq 6.html">
+            <img src="media2/Hyundai-Ioniq-6-N-illustration-blue.jpg" alt="Hyundai Ioniq 6N">
+          </a>
+          <h3>Hyundai Hyundai-Ioniq-6-N</h3>
+          <p>Experience the future of luxury and innovation with the Hyundai IONIQ 6 — a masterpiece of aerodynamic design, advanced electric performance,
+             and intelligent technology."</p>
+        </div>
+        <div class="model">
+          <a href="rn 30.html">
+            <img src="media2/rn30-103.jpg" alt="Hyundai Rn30">
+          </a>
+          <h3>Hyundai Rn30</h3>
+          <p>"Unleashed from the race track and sculpted for the future — the Hyundai RN30 is
+             a raw expression of speed, power, and innovation</p>
+        </div>
+        </div>
+      </div>
+     
+    </section>
+
+    <section id="Why" class="reveal">
+      <h2>Why Choose Hyundai?</h2>
+      <ul>
+        <li>Innovative and stylish design</li>
+        <li>Trusted safety and reliability</li>
+        <li>Affordable and fuel-efficient vehicles</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="Contact">
+    <p>&copy; 2025 Hyundai. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@hyundai.com">info@hyundai.com</a></p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    });
+  </script>
+      <script src="js-hyundai/script.js"></script>
+</body>
+</html>
