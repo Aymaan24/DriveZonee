@@ -1,0 +1,219 @@
+/*
+ * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
+ */
+
+
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body {
+
+} */
+
+
+
+
+
+.jeep-container {
+    width: 100%;
+    /* background-color: #05141F; */
+    background: linear-gradient(to bottom, #000000, #1a1a1a, #333333, #4d4d4d, #666666);
+    font-family: sans-serif;
+}
+.jeep-content {
+    width: 85%;
+    margin: auto;
+}
+.jeep-header {
+    width: 100%;
+    text-align: center;
+}
+.jeep-logo img {
+    width: 470px; 
+    margin: -97px 0px -155px 0px;
+   margin-bottom: 1px;
+}
+.jeep-title p {
+    color: #dbd8d8;
+    font-size: 20px;
+}
+.jeep-cars {
+    margin-top: 55px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 3% ;
+    position: relative;
+}
+.jeep-car img {
+    width: 100%;
+    height: 100%;
+}
+.jeep-car {
+    transition: .5s;
+}
+.jeep-car:hover {
+    transform: scale(1.1 , 1.1);
+}
+.jeep-car-info {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    margin: 0px 0px 17px 13px;
+}
+.jeep-car-info span {
+    color: #fff;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.jeep-car-info h4 {
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+.jeep-car-info .jeep-car-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 18px;
+    background-color: #05141f00;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+}
+.jeep-car-btn:hover {
+    background-color: #fff;
+    color: #05141F;
+    letter-spacing: 2px;
+}
+.jeep-background-img {
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+    background-image: url(../images/jeep-wrangler-7023738_1280.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.jeep-sec-footer {
+    width: 80%;
+    margin: 70px auto 150px auto;
+    display: flex ;
+    justify-content: space-between;
+}
+.jeep-footer-item {
+    width: 30%;
+    text-align: center;
+}
+.jeep-footer-item img {
+    width: 80%;
+}
+.jeep-footer-item-center {
+    border-left: 1px solid #2e3840;
+    border-right: 1px solid #2e3840;
+}
+.jeep-footer-it-info {
+    margin-top: 27px;
+    height: 100px;
+}
+.jeep-footer-it-info span {
+    font-size: 14px;
+    color: #0e2b41;
+}
+.jeep-footer-it-info h2 {
+    font-size: 14px;
+    color: #05141F;
+    font-size: 24px;
+    margin-top: 22px ;
+    margin-bottom: -10px;
+}
+.jeep-footer-it-info p {
+    color: #212528;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 22px ;
+}
+.jeep-footer-it-btn button {
+    margin-top: 78px;
+    width: 110px;
+    height: 50px;
+    background-color: #05141F;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.jeep-footer-it-btn button:hover {
+    background-color: #fff;
+    border: 1px solid #05141F;
+    color: #05141F;
+}
+
+/* -----------------------------wrapper---------------------------------------- */
+.wrapper-parent {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #05141F;
+  }
+  .wrapper {
+    display: flex;
+    max-width: 750px;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px #0000001a;
+  }
+  .wrapper i.button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color: #343f4f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
+  }
+  i.button:active {
+    transform: scale(0.94) translateY(-50%);
+  }
+  i#prev {
+    left: 30px;
+  }
+  i#next {
+    right: 30px;
+  }
+  .image-container {
+    height: 360px;
+    max-width: 550px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .image-container .carousel {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .carousel img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    border: 3px solid #060e15;
+    object-fit: cover;
+  }
