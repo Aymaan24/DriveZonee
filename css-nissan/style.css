@@ -1,0 +1,125 @@
+  *{
+  box-sizing: border-box;
+    font-family: "Poppins";
+    margin: 0;
+}
+body{
+    padding: 0px 0px;
+    background-color:  rgb(0, 0, 0); 
+}
+div>img {
+        width: 500px;
+  
+    
+    }
+    
+    #c1 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div>p {
+        color: aliceblue;
+        font-size: 1.2em;
+        font-style: italic;
+    
+    }
+    
+    .ul1 {
+        height: 40px;
+        background-color: rgb(17, 15, 15);
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    div>ul>li>a {
+        font-size: 1.3em;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .large {
+        padding: 15px;
+    }
+    
+    
+    .imag2 {
+        width: 350px;
+    
+    }
+    
+    #Best {
+    
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    #car2 {
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
+    div>a {
+        color: aliceblue;
+    }
+    
+    div>p>a {
+        color: aliceblue;
+    }
+    
+    .social-media {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .social-media-icons i {
+        font-size: 50px;
+        margin-right: 10px;
+    
+    }
+    
+    .fa-facebook {
+        margin-right: 10px;
+    }
+    
+    .fa-twitter {
+        margin-right: 10px;
+    }
+    
+    .fa-instagram {
+        margin-right: 10px;
+    }
+    
+    h1{
+        color: aliceblue;
+    }
+    h2{
+        color: aliceblue;
+    }
+    #back {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(43, 80, 156);
+        color: aliceblue;
+        padding: 30px;
+        text-decoration: none;
+    }
+    div>a {
+        color: aliceblue;
+        font-size: large;
+    }
+
+
+
+
+
