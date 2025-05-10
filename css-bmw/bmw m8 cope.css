@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    padding: 20px 10%;
+}
+
+.mainimg {
+    width: 800px;
+    height: 570px;
+    display: flex;
+    float: right;
+    position: absolute;
+    left: 40%;
+    bottom: 0%;
+    top: 15%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.navbar .btn {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 15px 50px;
+    border-radius: 30px;
+    transition: 300ms;
+}
+
+.navbar .btn:hover {
+    transform: scale(0.9);
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    color: rgb(62, 60, 207);
+    font-size: 34px;
+}
+
+.content h1 {
+    color: #222;
+    font-size: 100px;
+    margin-top: -25px;
+}
+
+.content p {
+    max-width: 380px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.1rem;
+}
+
+.content h3 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.color-btn {
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.line {
+    background: linear-gradient(120deg, #0066b1 33%, #003d78 0, #003d78 66%, #e22718 0);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 6.5px) 100%, 0 100%);
+    height: 10px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+}
+
+.the {
+    font-family: BMWTypeNextLatin Light, Helvetica, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.3;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 70px;
+    color: rgb(62, 60, 207);
+}
+
+.content-2 {
+    position: relative;
+    top: 250px;
+}
+
+.intro {
+    font-family: monospace;
+    max-width: 400px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.4;
+    position: relative;
+    bottom: 50px;
+}
+
+.img {
+    width: 600px;
+    height: 350px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../m8-imgs/bmw-m8-competition-coupe-thumbnail.jpeg );
+    position: relative;
+    left: 550px;
+    bottom: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.performance {
+    position: relative;
+    bottom: 80px;
+}
+
+.powerpart {
+    position: relative;
+    bottom: 210px;
+}
+
+.power {
+    position: relative;
+    bottom: 50px;
+    margin-left: 650px;
+}
+
+.intro2 {
+    margin-left: 650px;
+    max-width: 400px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.4;
+    position: relative;
+    bottom: 20px;
+}
+
+.img2 {
+    width: 600px;
+    height: 350px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../m8-imgs/m8engine.jpg);
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 30px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 350px;
+    right: 40px;
+}
+
+.carvideo {
+    width: 650px;
+    height: 366px;
+    position: relative;
+    bottom: 230px;
+    left: 480px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    display: inline-block;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.479), 0 6px 30px 0 rgba(0, 0, 0, 0.3);
+}
+
+.textvid {
+    position: relative;
+    right: 10px;
+    bottom: 550px;
+    color: #a10c0c;
+}
+
+.textvid2 {
+    position: relative;
+    right: 15px;
+    bottom: 500px;
+}
+
+.last {
+    position: relative;
+    bottom: 180px;
+}
+
+.multi {
+    position: relative;
+    top: 50px;
+}
+
+.disc {
+    position: relative;
+    bottom: 300px;
+    right: 80px;
+    font-size: 65px;
+    font-style: italic;
+    color: rgb(2, 2, 22);
+}
+
+.front {
+    position: relative;
+    bottom: 450px;
+    right: 75px;
+    height: 515px;
+    border-radius: 20px;
+}
+
+.inside {
+    position: relative;
+    left: 890px;
+    bottom: 287px;
+    border-radius: 20px;
+}
+
+.back {
+    position: relative;
+    left: 605px;
+    bottom: 110px;
+    border-radius: 20px;
+}
+
+.cover {
+    position: relative;
+    left: 889px;
+    bottom: 615px;
+    width: 282px;
+    border-radius: 20px;
+}
+
+.price {
+    padding: 20px;
+    width: 500px;
+    height: 95px;
+    position: relative;
+    bottom: 550px;
+    right: 70px;
+}
+
+.word1 {
+    font-family: serif;
+}
+
+.num {
+    font-family: monospace;
+}
+
+.hr {
+    width: 1000px;
+    height: 5px;
+    background-color: #222;
+    position: relative;
+    top: 50px;
+    left: 65px;
+}
+
+.lastp p {
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    position: relative;
+    bottom: 350px;
+}
+
+.r1 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    top: 60px;
+}
+
+.r2 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    bottom: 340px;
+}
+
+.r3 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    top: 510px;
+}
+
+.r4 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    top: 710px;
+}
+
+.r5 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    top: 880px;
+}
+
+.r6 {
+    height: 4px;
+    background-color: #222;
+    width: 70px;
+    position: relative;
+    top: 1100px;
+}
+
+.hr2 {
+    width: 1000px;
+    height: 5px;
+    background-color: #222;
+    position: relative;
+    bottom: 250px;
+    left: 20px;
+}
+
+#btn1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a62c2b;
+    box-shadow: #333;
+    cursor: pointer;
+    display: flex;
+}
+
+#btn1:hover {
+    box-shadow: 0 0 0 3.5px rgba(0, 0, 0, 0.3);
+}
+
+#btn2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: #333;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    left: 10px;
+}
+
+#btn2:hover {
+    box-shadow: 0 0 0 3.5px rgba(0, 0, 0, 0.3);
+}
+
+#btn3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: #333;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    left: 20px;
+}
+
+#btn3:hover {
+    box-shadow: 0 0 0 3.5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #262626;
+    color: #b8b3b3e0;
+    position: absolute;
+    top: 4900px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    font-size: 12px;
+    padding: 70px 0;
+}
+
+.lastline {
+    width: 90%;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+    color: #b8b3b3e0;
+}
+
+.footer {
+    position: absolute;
+    left: 50px;
+    top: 140px;
+}
+
+.logo2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.socialicons {
+    display: flex;
+    position: absolute;
+    top: 150px;
+}
+
+.socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+.socialicons a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialicons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialicons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.face {
+    position: absolute;
+    bottom: 65px;
+    left: 1100px;
+}
+
+.insta2 {
+    position: absolute;
+    bottom: 65px;
+    left: 1200px;
+
+}
+
+.youtube {
+    position: absolute;
+    bottom: 65px;
+    left: 1000px;
+}
